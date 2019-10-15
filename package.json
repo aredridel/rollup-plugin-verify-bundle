@@ -28,11 +28,11 @@
     }
   },
   "devDependencies": {
-    "esm": "^3.2.25",
-    "rollup": "^1.24.0"
-  },
-  "dependencies": {
+    "rollup": "^1.24.0",
     "tape": "^4.11.0",
     "tape-await": "^0.1.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
   }
 }
