@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-verify-bundle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verify properties of the output bundle(s)",
   "main": "index.js",
   "module": "main.js",
