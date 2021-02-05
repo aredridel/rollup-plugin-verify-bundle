@@ -7,8 +7,10 @@ export default function verify(opts) {
                 const deps = new Set(Object.keys(bundle));
                 const unknown = new Set();
                 for (const output of Object.values(bundle)) {
-                    for (const dep of output.imports) {
-                        if (!deps.has(dep)) unknown.add(dep);
+                    if (output.imports) {
+                        for (const dep of output.imports) {
+                            if (!deps.has(dep)) unknown.add(dep);
+                        }
                     }
                 }
 
