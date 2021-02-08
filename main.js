@@ -2,6 +2,10 @@ export default function verify(opts) {
 
     return {
         name: 'verify-build', // this name will show up in warnings and errors
+        /**
+         * @param {any} _options
+         * @param {import('rollup').OutputBundle} bundle
+         */
         generateBundle(_options, bundle) {
             if (opts.noExternals) {
                 const deps = new Set(Object.keys(bundle));
